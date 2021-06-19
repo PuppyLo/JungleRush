@@ -1,0 +1,47 @@
+{
+"instructions_readme": "1) Open Chrome, 2) go to chrome://tracing, 3) click Load, 4) navigate to this file.",
+
+"traceEvents":[
+{ "pid": "il2cpp_outer", "ph":"M", "name": "process_name", "args": {"name": "il2cpp_outer"} },
+{ "pid": "il2cpp_outer", "ph":"M", "name": "process_sort_index", "args": {"sort_index": -1} },
+{ "pid": "il2cpp_outer", "tid": 1, "ph":"M", "name": "thread_name", "args": {"name": "Main thread"} },
+{ "pid": "il2cpp_outer", "tid": 1,"ts": 14666749714.977741,"dur": 1740885.154398115, "ph":"X", "name": "il2cpp.exe"},
+{ "pid": "il2cpp_outer", "tid": 1,"ts": 14666766669.157673,"dur": 1647056.6091500456, "ph":"X", "name": "BeeDriverRunner.Execute"},
+{ "pid": "BeeDriver", "ph":"M", "name": "process_name", "args": {"name": "BeeDriver"} },
+{ "pid": "BeeDriver", "ph":"M", "name": "process_sort_index", "args": {"sort_index": -2} },
+{ "pid": "BeeDriver", "tid": 1, "ph":"M", "name": "thread_name", "args": {"name": "Main thread"} },
+{ "pid": "BeeDriver", "tid": 1,"ts": 14666832906.277195,"dur": 0, "ph":"X", "name": "Build FinalProgram"},
+{ "pid": "BeeDriver", "tid": 1,"ts": 14666833688.010628,"dur": 57684.496213904284, "ph":"X", "name": "WriteBuildProgramData"},
+{ "pid": "BeeDriver", "tid": 1,"ts": 14666892638.729223,"dur": 1475647.7429393958, "ph":"X", "name": "Run Backend"},
+{ "cat":"", "pid":"bee_backend", "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":"bee_backend", "tid":0, "ts":14667446192, "dur":514621, "ph":"X", "name": "DriverCheckDagSignatures",  "args": { "durationMS":515, "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":14667960838, "dur":48687, "ph":"X", "name": "DriverInitData",  "args": { "durationMS":49, "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":14668009932, "dur":2611, "ph":"X", "name": "Tundra",  "args": { "durationMS":3, "detail":"RemoveStaleOutputs" }}
+,{ "pid":"bee_backend", "tid":0, "ts":14668012598, "dur":5, "ph":"X", "name": "Tundra",  "args": { "durationMS":0, "detail":"PrepareNodes" }}
+,{ "pid":"bee_backend", "tid":0, "ts":14668012606, "dur":614, "ph":"X", "name": "Tundra",  "args": { "durationMS":1, "detail":"BuildQueueInit" }}
+,{ "pid":"bee_backend", "tid":0, "ts":14668260534, "dur":20124, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":20, "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":14668280687, "dur":8, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":14668280713, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":14668280733, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":14668280753, "dur":1, "ph":"X", "name": "SharedResourceDestroy",  "args": { "durationMS":0, "detail":"" }}
+,{ "pid":"bee_backend", "tid":0, "ts":14668280785, "dur":16212, "ph":"X", "name": "Tundra",  "args": { "durationMS":16, "detail":"Write AllBuiltNodes" }}
+,{ "pid":"bee_backend", "tid":1, "ts":14668117648, "dur":50166, "ph":"X", "name": "CheckInputSignature",  "args": { "durationMS":50, "detail":"IL2CPP_CodeGen D:/Programs/Unity/GitHub/JungleRush/JungleRush/Library/Il2cppBuildCache/iOS/il2cppOutput/Data" }}
+,{ "pid":"bee_backend", "tid":1, "ts":14668260498, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "durationMS":0, "detail":"FinalProgram" }}
+,{ "pid":"bee_backend", "tid":1, "ts":14668260510, "dur":43, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":0, "detail":"" }}
+,{ "pid":"bee_backend", "tid":1, "ts":14668260555, "dur":19928, "ph":"X", "name": "Exiting",  "args": { "durationMS":20, "detail":"BuildLoop" }}
+,{ "pid":"bee_backend", "tid":2, "ts":14668016703, "dur":243843, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":244, "detail":"" }}
+,{ "pid":"bee_backend", "tid":2, "ts":14668260549, "dur":19706, "ph":"X", "name": "Exiting",  "args": { "durationMS":20, "detail":"BuildLoop" }}
+,{ "pid":"bee_backend", "tid":3, "ts":14668016782, "dur":243761, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":244, "detail":"" }}
+,{ "pid":"bee_backend", "tid":3, "ts":14668260544, "dur":19799, "ph":"X", "name": "Exiting",  "args": { "durationMS":20, "detail":"BuildLoop" }}
+,{ "pid":"bee_backend", "tid":4, "ts":14668016843, "dur":243691, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":244, "detail":"" }}
+,{ "pid":"bee_backend", "tid":4, "ts":14668260535, "dur":19868, "ph":"X", "name": "Exiting",  "args": { "durationMS":20, "detail":"BuildLoop" }}
+,{}
+
+],
+"meta_datetime": "06/19/2021 19:42:00",
+"meta_command_line": "D:\\Programs\\Unity\\Unity\\2021.2.0a13\\Editor\\Data\\il2cpp\\build\\deploy\\net5.0\\il2cpp.dll --convert-to-cpp --emit-null-checks --enable-array-bounds-check --dotnetprofile=unityaot --cachedirectory=D:/Programs/Unity/GitHub/JungleRush/JungleRush/Library/Il2cppBuildCache/iOS --additional-cpp=D:/Programs/Unity/GitHub/JungleRush/JungleRush/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp --additional-cpp=D:/Programs/Unity/GitHub/JungleRush/JungleRush/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp --avoid-dynamic-library-copy --dont-deploy-baselib --profiler-report --map-file-parser=D:/Programs/Unity/Unity/2021.2.0a13/Editor/Data/Tools/MapFileParser/MapFileParser.exe --directory=D:/Programs/Unity/GitHub/JungleRush/JungleRush/Temp/StagingArea/Data/Managed --generatedcppdir=D:/Programs/Unity/GitHub/JungleRush/JungleRush/Library/Il2cppBuildCache/iOS/il2cppOutput --convert-in-graph",
+"meta_command_line_args": "D:\\Programs\\Unity\\Unity\\2021.2.0a13\\Editor\\Data\\il2cpp\\build\\deploy\\net5.0\\il2cpp.dll --convert-to-cpp --emit-null-checks --enable-array-bounds-check --dotnetprofile=unityaot --cachedirectory=D:/Programs/Unity/GitHub/JungleRush/JungleRush/Library/Il2cppBuildCache/iOS --additional-cpp=D:/Programs/Unity/GitHub/JungleRush/JungleRush/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp --additional-cpp=D:/Programs/Unity/GitHub/JungleRush/JungleRush/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp --avoid-dynamic-library-copy --dont-deploy-baselib --profiler-report --map-file-parser=D:/Programs/Unity/Unity/2021.2.0a13/Editor/Data/Tools/MapFileParser/MapFileParser.exe --directory=D:/Programs/Unity/GitHub/JungleRush/JungleRush/Temp/StagingArea/Data/Managed --generatedcppdir=D:/Programs/Unity/GitHub/JungleRush/JungleRush/Library/Il2cppBuildCache/iOS/il2cppOutput --convert-in-graph",
+"meta_user_name": "Puppy",
+"meta_os_version": "Microsoft Windows NT 10.0.19042.0",
+"meta_cpu_count": "4"
+}
